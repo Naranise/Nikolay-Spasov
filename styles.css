@@ -111,3 +111,21 @@ header h1, header p {
     text-decoration: none;
     cursor: pointer;
 }
+/* Estilo para el contenedor de imágenes */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.image-container img {
+    margin: 0 10px; /* Espaciado entre imágenes */
+    max-width: 100px; /* Limita el tamaño máximo de las imágenes */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+}
