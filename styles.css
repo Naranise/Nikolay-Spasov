@@ -120,7 +120,7 @@ header h1, header p {
 
 .image-container img {
     margin: 0 10px; /* Espaciado entre imágenes */
-    max-width: 100px; /* Limita el tamaño máximo de las imágenes */
+    max-width: 10px; /* Limita el tamaño máximo de las imágenes */
     height: auto;
     border-radius: 10px; /* Bordes redondeados para las imágenes */
     transition: transform 0.3s ease;
