@@ -86,3 +86,9 @@ nav ul li a {
 .image-container:last-of-type p {
     margin-right: -50px; /* Ajusta la posición del texto para la última imagen */
 }
+@font-face {
+    font-family: 'Bodwars';
+    src: url('bodwars.ttf') format('truetype'); /* Ruta directa si está en el directorio principal */
+    font-weight: normal;
+    font-style: normal;
+}
