@@ -17,27 +17,6 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.logo img {
-    height: 50px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #4CAF50;
-    font-weight: bold;
-}
-
 .hero {
     text-align: center;
     margin: 50px 0;
@@ -48,7 +27,6 @@ nav ul li a {
     color: #4CAF50;
 }
 
-/* Cambia el layout de flex a grid para apilar las imágenes en columnas */
 .images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -60,17 +38,14 @@ nav ul li a {
     text-align: center;
 }
 
-/* Apilar las imágenes dentro del mismo contenedor */
-.image-container img {
-    display: block;
-    margin: 0 auto 10px; /* Espaciado entre imágenes */
+button {
+    margin-bottom: 30px; /* Añade margen inferior para mayor espacio entre el botón y la imagen */
 }
 
-/* Ajustes de tamaño */
 .image-container img {
     width: 200px; /* Cambia el tamaño según tus necesidades */
     height: auto; /* Mantiene la relación de aspecto de la imagen */
-    margin-top: 20px;
+    margin-top: 40px; /* Aumenta el margen superior para separar más la imagen del botón */
 }
 
 .image-container p {
