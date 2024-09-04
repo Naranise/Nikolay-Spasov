@@ -70,6 +70,7 @@ nav ul li a {
 .image-container img {
     width: 200px; /* Cambia el tamaño según tus necesidades */
     height: auto; /* Mantiene la relación de aspecto de la imagen */
+    margin-top: 20px;
 }
 
 .image-container p {
