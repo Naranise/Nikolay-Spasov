@@ -38,9 +38,7 @@ header {
     text-align: center;
 }
 
-button {
-    margin-bottom: 30px; /* Añade margen inferior para mayor espacio entre el botón y la imagen */
-}
+
 
 .image-container img {
     width: 200px; /* Cambia el tamaño según tus necesidades */
