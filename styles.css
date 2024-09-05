@@ -17,6 +17,27 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
 .hero {
     text-align: center;
     margin: 50px 0;
@@ -27,7 +48,6 @@ header {
     color: #4CAF50;
 }
 
-/* Cambiar a un diseño vertical (una imagen encima del texto y botón) */
 .images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -37,30 +57,16 @@ header {
 
 .image-container {
     text-align: center;
-    display: flex;
-    flex-direction: column; /* Asegura disposición vertical: imagen, texto, botón */
-    align-items: center;
-}
-
-/* Eliminar el flex horizontal en el texto y botón */
-.text-button-container {
-    display: block; /* Cambiar de flex a block para alineación vertical */
-    text-align: center;
 }
 
 .image-container img {
-    width: 200px;
-    height: auto;
-    margin-top: 20px;
+    width: 200px; /* Cambia el tamaño según tus necesidades */
+    height: auto; /* Para mantener las imágenes cuadradas */
+    margin-top: 20px; /* Separación entre las imágenes y el botón */
 }
 
 .image-container p {
     margin-top: 10px;
     font-size: 1.2em;
     color: #333333;
-}
-
-/* Asegurarse de que el último texto esté alineado */
-.image-container:last-of-type p {
-    margin-top: 20px;
 }
