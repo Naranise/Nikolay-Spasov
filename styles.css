@@ -45,7 +45,7 @@ button {
 .image-container img {
     width: 200px; /* Cambia el tamaño según tus necesidades */
     height: auto; /* Mantiene la relación de aspecto de la imagen */
-    margin-top: 40px; /* Aumenta el margen superior para separar más la imagen del botón */
+    margin-top: 100px; /* Aumenta el margen superior para separar más la imagen del botón */
 }
 
 .image-container p {
