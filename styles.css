@@ -27,6 +27,7 @@ header {
     color: #4CAF50;
 }
 
+/* Cambiar a un diseño vertical (una imagen encima del texto y botón) */
 .images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -36,19 +37,21 @@ header {
 
 .image-container {
     text-align: center;
+    display: flex;
+    flex-direction: column; /* Asegura disposición vertical: imagen, texto, botón */
+    align-items: center;
 }
 
+/* Eliminar el flex horizontal en el texto y botón */
 .text-button-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; /* Espacio entre el texto y el botón */
+    display: block; /* Cambiar de flex a block para alineación vertical */
+    text-align: center;
 }
 
 .image-container img {
     width: 200px;
     height: auto;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .image-container p {
@@ -57,7 +60,7 @@ header {
     color: #333333;
 }
 
-/* Bajar el texto "Descansa" en el último contenedor */
+/* Asegurarse de que el último texto esté alineado */
 .image-container:last-of-type p {
-    margin-top: 20px; /* Ajusta según la distancia que desees */
+    margin-top: 20px;
 }
