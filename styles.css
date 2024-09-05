@@ -54,15 +54,8 @@ header {
 }
 
 .image-container p {
-    margin-top: 30px; /* Aseguramos un margen superior consistente */
+    margin-top: 10px;
     font-size: 1.2em;
     color: #333333;
     text-align: center;
 }
-
-/* Ajustar el margen superior de Descansa específicamente */
-.image-container:last-of-type p {
-    margin-top: 30px; /* Ajusta este valor según la distancia que desees */
-}
-
-
