@@ -38,12 +38,19 @@ header {
     text-align: center;
 }
 
+/* Flexbox para alinear el texto y el botón en una fila */
+.text-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre el texto y el botón */
+}
 
-
+/* Aumenta el margen superior de las imágenes para separarlas del texto */
 .image-container img {
-    width: 200px; /* Cambia el tamaño según tus necesidades */
-    height: auto; /* Mantiene la relación de aspecto de la imagen */
-    margin-top: 40px; /* Aumenta el margen superior para separar más la imagen del botón */
+    width: 200px;
+    height: auto;
+    margin-top: 40px;
 }
 
 .image-container p {
@@ -51,3 +58,4 @@ header {
     font-size: 1.2em;
     color: #333333;
 }
+
