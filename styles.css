@@ -29,33 +29,34 @@ header {
 
 .images {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
     margin-top: 50px;
 }
 
-.image-container {
-    text-align: center;
+/* Alinear texto y botón en una fila */
+.content-flex {
+    display: flex;
+    align-items: center; /* Alineación vertical */
+    justify-content: space-between; /* Alinear elementos en ambos extremos */
+    gap: 20px; /* Espacio entre el texto y la imagen */
 }
 
-/* Flexbox para alinear el texto y el botón en una fila */
 .text-button-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px; /* Espacio entre el texto y el botón */
+    flex-direction: column;
+    align-items: flex-start; /* Alinear el texto a la izquierda */
 }
 
-/* Aumenta el margen superior de las imágenes para separarlas del texto */
 .image-container img {
-    width: 200px;
+    width: 150px; /* Ajusta el tamaño de las imágenes */
     height: auto;
-    margin-top: 40px;
 }
 
 .image-container p {
     margin-top: 10px;
     font-size: 1.2em;
     color: #333333;
+    text-align: center;
 }
 
