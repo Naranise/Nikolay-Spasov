@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,37 +7,46 @@ body {
     box-sizing: border-box; /* Asegura que el padding no sobresalga del ancho */
 }
 
-header {
+/* Barra de navegación */
+nav {
+    background-color: #4CAF50;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.logo img {
-    height: 50px;
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #4CAF50;
+    color: white;
     font-weight: bold;
+    font-size: 18px;
 }
 
+nav ul li a:hover {
+    color: #e1e1e1;
+}
+
+/* Espaciado de secciones */
+section {
+    padding: 100px 20px;
+    margin-top: 50px; /* Para compensar el menú fijo */
+}
+
+/* Estilos de secciones */
 .hero {
     text-align: center;
     margin: 50px 0;
@@ -54,7 +64,7 @@ nav ul li a {
     margin-top: 50px;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 10px; /* Añade padding lateral para que las imágenes no se peguen a los bordes */
+    padding: 0 10px; /* Padding lateral para que las imágenes no se peguen a los bordes */
 }
 
 .image-container {
@@ -65,8 +75,8 @@ nav ul li a {
 }
 
 .image-container img {
-    width: 100%; /* Imágenes se ajustan al ancho disponible */
-    max-width: 200px; /* Limita el tamaño máximo de las imágenes */
+    width: 100%;
+    max-width: 200px; /* Tamaño máximo de las imágenes */
     height: auto;
     margin-top: 20px;
 }
@@ -94,6 +104,31 @@ nav ul li a {
     background-color: #45a049;
 }
 
+/* Estilos de formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+
+form label, form input, form textarea {
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Media queries */
 @media only screen and (max-width: 768px) {
     .hero h1 {
         font-size: 1.8em;
@@ -101,26 +136,17 @@ nav ul li a {
     }
 
     .images {
-        grid-template-columns: 1fr; /* Una sola columna para pantallas pequeñas */
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
         gap: 15px;
-        padding: 0 20px; /* Asegura que no se peguen los elementos a los bordes */
+        padding: 0 20px;
     }
 
     .image-container img {
-        width: 100%; /* Imágenes ocupan el ancho del contenedor */
-        max-width: 150px; /* Tamaño máximo para pantallas pequeñas */
-        margin-top: 10px;
-    }
-
-    .image-container button {
-        width: 100%; /* Botón ocupa todo el ancho */
-        font-size: 1em;
-        padding: 10px;
-        max-width: 200px; /* Limita el tamaño máximo del botón */
+        max-width: 150px; /* Tamaño máximo en pantallas pequeñas */
     }
 
     header {
-        flex-direction: column; /* Cambia el layout del header en pantallas pequeñas */
+        flex-direction: column;
         align-items: center;
     }
 }
@@ -131,7 +157,7 @@ nav ul li a {
     }
 
     .image-container img {
-        max-width: 120px; /* Reduce el tamaño de las imágenes */
+        max-width: 120px;
     }
 
     .image-container button {
