@@ -57,6 +57,10 @@ nav ul li a {
 
 .image-container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
 }
 
 .image-container img {
@@ -69,4 +73,19 @@ nav ul li a {
     margin-top: 10px;
     font-size: 1.2em;
     color: #333333;
+}
+
+.image-container button {
+    margin-top: 10px; /* Espacio entre el texto y el botón */
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    font-size: 1em;
+    background-color: #4CAF50; /* Color del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-container button:hover {
+    background-color: #45a049; /* Color al pasar el ratón por encima */
 }
