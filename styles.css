@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%; /* Asegura que ocupe el ancho completo */
 }
 
 header {
@@ -61,7 +62,6 @@ nav ul li a {
     flex-direction: column;
     align-items: center; /* Centra el contenido horizontalmente */
 }
-}
 
 .image-container img {
     width: 200px; /* Cambia el tamaño según tus necesidades */
@@ -89,6 +89,7 @@ nav ul li a {
 .image-container button:hover {
     background-color: #45a049; /* Color al pasar el ratón por encima */
 }
+
 @media only screen and (max-width: 768px) {
     .hero h1 {
         font-size: 1.8em; /* Reduce el tamaño del título */
@@ -113,11 +114,25 @@ nav ul li a {
 
     body {
         padding: 10px; /* Añade espacio alrededor del contenido */
+        width: 100%; /* Asegura que el body ocupa el ancho completo */
     }
 
-    /* Ajusta el header si lo necesitas */
     header {
-        flex-direction: column; /* Si tienes elementos en horizontal en el header, cámbialo a columna */
+        flex-direction: column; /* Cambia la orientación del header en móviles */
         padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5em; /* Aún más pequeño para pantallas más chicas */
+    }
+
+    .image-container img {
+        width: 120px; /* Reduce más el tamaño de las imágenes */
+    }
+
+    .image-container button {
+        font-size: 0.9em; /* Ajuste del tamaño del texto del botón */
     }
 }
