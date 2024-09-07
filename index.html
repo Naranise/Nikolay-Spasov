@@ -8,13 +8,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Barra de navegación -->
     <header>
+        <nav>
+            <ul>
+                <li><a href="#biografia">Biografía</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- Sección Hero -->
     <main>
         <section class="hero">
             <h1>Literatura, vanguardia, sorpresa, idealismo, romance por el escritor Nikolay Spasov</h1>
-            
         </section>
+
+        <!-- Sección de imágenes de libros -->
         <section class="images">
             <div class="image-container">
                 <p><strong>Primer libro ya disponible! <br> El búlgaro en la pecera</strong></p>
@@ -41,6 +53,40 @@
                 <p><strong>Descansa</strong></p>
             </div>
         </section>
+
+        <!-- Sección de Biografía -->
+        <section id="biografia">
+            <h2>Biografía</h2>
+            <p>Nikolay Spasov es un escritor búlgaro, apasionado por la literatura y la vanguardia...</p>
+        </section>
+
+        <!-- Sección de Blog -->
+        <section id="blog">
+            <h2>Blog</h2>
+            <article>
+                <h3>El proceso creativo detrás de “Un búlgaro en la pecera”</h3>
+                <p>En este artículo, Nikolay explica cómo nació la idea de su primer libro...</p>
+            </article>
+            <!-- Más entradas del blog aquí -->
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
+
 </body>
 </html>
