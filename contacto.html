@@ -24,20 +24,25 @@
     <main>
         <section class="contacto">
             <h2>Contacto</h2>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+    <form id="contact-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" required>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
 
-                <button type="submit">Enviar</button>
-            </form>
+        <button type="submit">Enviar</button>
+    </form>
         </section>
     </main>
-
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function(){
+        emailjs.init("tu_user_id"); // Reemplaza "tu_user_id" con tu user ID de EmailJS
+    })();
+</script>
 </body>
 </html>
