@@ -89,3 +89,35 @@ nav ul li a {
 .image-container button:hover {
     background-color: #45a049; /* Color al pasar el ratón por encima */
 }
+@media only screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8em; /* Reduce el tamaño del título */
+        margin: 20px 0;
+    }
+
+    .images {
+        grid-template-columns: 1fr; /* Cambia el grid a una sola columna */
+        gap: 15px;
+    }
+
+    .image-container img {
+        width: 150px; /* Ajusta el tamaño de las imágenes para pantallas más pequeñas */
+        margin-top: 10px;
+    }
+
+    .image-container button {
+        width: 100%; /* Botón ocupa todo el ancho del contenedor */
+        font-size: 1em; /* Ajusta el tamaño del botón para móviles */
+        padding: 10px; /* Espaciado mayor para facilitar interacción */
+    }
+
+    body {
+        padding: 10px; /* Añade espacio alrededor del contenido */
+    }
+
+    /* Ajusta el header si lo necesitas */
+    header {
+        flex-direction: column; /* Si tienes elementos en horizontal en el header, cámbialo a columna */
+        padding: 10px;
+    }
+}
