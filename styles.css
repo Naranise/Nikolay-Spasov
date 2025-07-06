@@ -1,10 +1,10 @@
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    width: 100%;
-    box-sizing: border-box; /* Asegura que el padding no sobresalga del ancho */
+    box-sizing: border-box;
+    background: #fff;
+    color: #333;
 }
 
 /* Barra de navegación */
@@ -40,158 +40,37 @@ nav ul li a:hover {
     color: #e1e1e1;
 }
 
-/* Espaciado de secciones */
-section {
-    padding: 100px 20px;
-    margin-top: 50px; /* Para compensar el menú fijo */
-}
-
-/* Estilos de secciones */
+/* Sección hero centrada */
 .hero {
     text-align: center;
-    margin: 50px 0;
+    margin: 150px 20px 50px; /* deja espacio para el nav fijo */
 }
 
 .hero h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     color: #4CAF50;
 }
 
-.images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top: 50px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 10px; /* Padding lateral para que las imágenes no se peguen a los bordes */
-}
-
-.image-container {
+/* Pie de página */
+footer {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.image-container img {
+    padding: 20px 0;
+    background: #f2f2f2;
+    color: #777;
+    font-size: 0.9em;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    max-width: 200px; /* Tamaño máximo de las imágenes */
-    height: auto;
-    margin-top: 20px;
 }
 
-.image-container p {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #333333;
-}
-
-.image-container button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 1em;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    max-width: 200px;
-}
-
-.image-container button:hover {
-    background-color: #45a049;
-}
-
-/* Estilos de formularios */
-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: 0 auto;
-}
-
-form label, form input, form textarea {
-    margin-bottom: 10px;
-}
-
-form button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #45a049;
-}
-
-/* Media queries */
-@media only screen and (max-width: 768px) {
-    .hero h1 {
-        font-size: 1.8em;
-        margin: 20px 0;
-    }
-
-    .images {
-        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
-        gap: 15px;
-        padding: 0 20px;
-    }
-
-    .image-container img {
-        max-width: 150px; /* Tamaño máximo en pantallas pequeñas */
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media only screen and (max-width: 480px) {
+/* Responsive simple */
+@media (max-width: 768px) {
     .hero h1 {
         font-size: 1.5em;
+        margin: 120px 10px 40px;
     }
 
-    .image-container img {
-        max-width: 120px;
-    }
-
-    .image-container button {
-        font-size: 0.9em;
-    }
-}
-.images-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0; /* sin espacios entre celdas */
-    margin-top: 50px;
-    width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box;
-}
-
-/* Ya lo tienes, pero lo reaplicamos para la nueva sección */
-.images-grid .image-container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-}
-
-/* Estilos para contenedores vacíos (para que ocupen espacio pero no se vean feos) */
-.images-grid .image-container:empty {
-    min-height: 300px; /* Altura fija para que mantengan su lugar */
-    visibility: hidden; /* No muestran nada visualmente */
-}
-
-/* Responsive: en móviles mostrar menos columnas */
-@media only screen and (max-width: 768px) {
-    .images-grid {
-        grid-template-columns: 1fr; /* una columna en pantallas pequeñas */
+    nav ul li a {
+        font-size: 16px;
     }
 }
