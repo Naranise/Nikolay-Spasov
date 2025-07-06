@@ -164,3 +164,34 @@ form button:hover {
         font-size: 0.9em;
     }
 }
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0; /* sin espacios entre celdas */
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* Ya lo tienes, pero lo reaplicamos para la nueva sección */
+.images-grid .image-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* Estilos para contenedores vacíos (para que ocupen espacio pero no se vean feos) */
+.images-grid .image-container:empty {
+    min-height: 300px; /* Altura fija para que mantengan su lugar */
+    visibility: hidden; /* No muestran nada visualmente */
+}
+
+/* Responsive: en móviles mostrar menos columnas */
+@media only screen and (max-width: 768px) {
+    .images-grid {
+        grid-template-columns: 1fr; /* una columna en pantallas pequeñas */
+    }
+}
