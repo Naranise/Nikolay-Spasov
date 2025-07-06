@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -43,12 +44,54 @@ nav ul li a:hover {
 /* Sección hero centrada */
 .hero {
     text-align: center;
-    margin: 150px 20px 50px; /* deja espacio para el nav fijo */
+    margin: 150px 20px 50px;
 }
 
 .hero h1 {
     font-size: 2em;
     color: #4CAF50;
+}
+
+/* Secciones de libros y cuentos */
+.libros, .cuentos {
+    max-width: 960px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+.libros h2, .cuentos h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+}
+
+/* Contenedores en rejilla para libros y cuentos */
+.contenedor-libros, .contenedor-cuentos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Cada libro o cuento */
+.libro, .cuento {
+    flex: 0 1 120px; /* ancho fijo aproximado */
+    text-align: center;
+}
+
+/* Miniaturas */
+.libro img, .cuento img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.libro img:hover, .cuento img:hover {
+    transform: scale(1.05);
 }
 
 /* Pie de página */
@@ -63,7 +106,7 @@ footer {
     width: 100%;
 }
 
-/* Responsive simple */
+/* Responsive */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 1.5em;
@@ -73,4 +116,15 @@ footer {
     nav ul li a {
         font-size: 16px;
     }
+
+    .libro, .cuento {
+        flex: 0 1 45%;
+    }
 }
+
+@media (max-width: 480px) {
+    .libro, .cuento {
+        flex: 0 1 90%;
+    }
+}
+
